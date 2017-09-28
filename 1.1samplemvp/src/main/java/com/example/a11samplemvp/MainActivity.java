@@ -8,8 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainView {
+
+    private TextView textView;
+    private ProgressBar progressBar;
+    MainPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+
+        textView = (TextView) findViewById(R.id.textView);
+        Button button = (Button) findViewById(R.id.button);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        presenter = new MainPresenterImpl(this, new GetQuoteInteractorImpl());
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                presenter.onButtonClick();
             }
         });
     }
@@ -48,5 +68,35 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.onDestroy();
+    }
+
+
+    @Override
+    public void showProgress() {
+
+        progressBar.setVisibility(View.VISIBLE);
+        textView.setVisibility(View.INVISIBLE);
+    }
+
+    @Override
+    public void hideProgress() {
+        progressBar.setVisibility(View.GONE);
+        textView.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void setQuote(String string) {
+        textView.setText(string);
     }
 }
