@@ -8,8 +8,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.example.a2di.component.Dagger_VehicleComponent;
+import com.example.a2di.component.VehicleComponent;
+import com.example.a2di.model.Vehicle;
+import com.example.a2di.module.VehicleModule;
 
 public class MainActivity extends AppCompatActivity {
+
+    Vehicle vehicle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +34,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        //Dager Code starts here...
+
+        VehicleComponent component = Dagger_VehicleComponent.builder().vehicleModule(new VehicleModule()).build();
+
+        vehicle = component.provideVehicle();
+
+        Toast.makeText(this, String.valueOf(vehicle.getSpeed()), Toast.LENGTH_SHORT).show();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

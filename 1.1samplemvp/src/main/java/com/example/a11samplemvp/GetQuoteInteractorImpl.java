@@ -23,7 +23,7 @@ public class GetQuoteInteractorImpl implements GetQuoteInteractor {
 
 
     @Override
-    public void getNextQuote(final GetQuoteInteractor.OnFinishedListener listener) {
+    public void getNextQuote(final OnFinishedListener listener) {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

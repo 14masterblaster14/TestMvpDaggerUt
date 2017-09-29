@@ -1,4 +1,4 @@
-package com.example.a11samplemvp;
+package com.example.a12mvp;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -8,16 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements MainView {
 
-    MainPresenter presenter;
-    private TextView textView;
-    private ProgressBar progressBar;
-    private Button button;
+//https://github.com/thinkmobiles/Android-MVP-vs-MVVM-Samples
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,19 +27,6 @@ public class MainActivity extends AppCompatActivity implements MainView {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-            }
-        });
-
-
-        textView = (TextView) findViewById(R.id.textView);
-        button = (Button) findViewById(R.id.button);
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        presenter = new MainPresenterImpl(this, new GetQuoteInteractorImpl());
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presenter.onButtonClick();
             }
         });
     }
@@ -69,35 +51,5 @@ public class MainActivity extends AppCompatActivity implements MainView {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        presenter.onDestroy();
-    }
-
-
-    @Override
-    public void showProgress() {
-
-        progressBar.setVisibility(View.VISIBLE);
-        textView.setVisibility(View.INVISIBLE);
-    }
-
-    @Override
-    public void hideProgress() {
-        progressBar.setVisibility(View.GONE);
-        textView.setVisibility(View.VISIBLE);
-    }
-
-    @Override
-    public void setQuote(String string) {
-        textView.setText(string);
     }
 }
