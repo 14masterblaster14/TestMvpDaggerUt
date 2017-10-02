@@ -1,4 +1,12 @@
 <resources>
+    <!--
     <string name="app_name">DaggerRetrofitOkHttpGsonRxJavaRxAndroid</string>
+-->
     <string name="action_settings">Settings</string>
+
+    <string name="app_name">DeezFoodz</string>
+    <string name="FoodzListError">Unable to retrieve Foodz list</string>
+    <string name="FoodItemError">Unable to retrieve Food item</string>
+    <string name="FoodItemContentDescription">Food Item Image View</string>
+    <string name="FoodItemMeasure">Amount: %1s</string>
 </resources>

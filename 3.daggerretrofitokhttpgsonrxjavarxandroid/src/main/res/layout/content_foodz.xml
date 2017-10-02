@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.daggerretrofitokhttpgsonrxjavarxandroid.ui.foodz.FoodzActivity"
+    tools:showIn="@layout/activity_foodz">
+
+    <ProgressBar
+        android:id="@+id/activity_food_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="24sp"
+            tools:text="Food name" />
+
+        <TextView
+            android:id="@+id/activity_food_measure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            tools:text="Food name" />
+
+        <TextView
+            android:id="@+id/activity_food_nutrient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            tools:text="Food name" />
+
+        <ImageView
+            android:id="@+id/activity_food_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/FoodItemContentDescription"
+            tools:src="@drawable/yellow" />
+
+    </LinearLayout>
+
+</LinearLayout>

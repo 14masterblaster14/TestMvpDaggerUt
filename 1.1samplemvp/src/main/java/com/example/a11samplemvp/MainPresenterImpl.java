@@ -20,7 +20,7 @@ public class MainPresenterImpl implements MainPresenter{
         if (mainView != null) {
             mainView.showProgress();
         }
-        //  getQuoteInteractor.getNextQuote(this);
+        //getQuoteInteractor.getNextQuote(this);
     }
 
     @Override

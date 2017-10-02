@@ -10,14 +10,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.a2di.component.Dagger_VehicleComponent;
+import com.example.a2di.component.DaggerVehicleComponent;
 import com.example.a2di.component.VehicleComponent;
 import com.example.a2di.model.Vehicle;
 import com.example.a2di.module.VehicleModule;
 
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity {
 
+    @Inject
     Vehicle vehicle;
+    private VehicleComponent vehicleComponent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Dager Code starts here...
 
-        VehicleComponent component = Dagger_VehicleComponent.builder().vehicleModule(new VehicleModule()).build();
+        vehicleComponent = DaggerVehicleComponent.builder().vehicleModule(new VehicleModule()).build();
 
-        vehicle = component.provideVehicle();
+        vehicle = vehicleComponent.provideVehicle();
 
         Toast.makeText(this, String.valueOf(vehicle.getSpeed()), Toast.LENGTH_SHORT).show();
     }
