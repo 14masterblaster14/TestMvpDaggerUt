@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         textView = (TextView) findViewById(R.id.textView);
         button = (Button) findViewById(R.id.button);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        presenter = new MainPresenterImpl(this, new GetQuoteInteractorImpl());
+        presenter = new MainPresenterImpl(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

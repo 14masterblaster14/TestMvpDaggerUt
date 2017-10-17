@@ -4,14 +4,14 @@ package com.example.a11samplemvp;
  * Created by ADMIN on 9/28/2017.
  */
 
-public class MainPresenterImpl implements MainPresenter{
+public class MainPresenterImpl implements MainPresenter, GetQuoteInteractor.OnFinishedListener {
 
     private MainView mainView;
     private GetQuoteInteractor getQuoteInteractor;
 
-    public MainPresenterImpl(MainView mainView, GetQuoteInteractor getQuoteInteractor) {
+    public MainPresenterImpl(MainView mainView) {
         this.mainView = mainView;
-        this.getQuoteInteractor = getQuoteInteractor;
+        getQuoteInteractor = new GetQuoteInteractorImpl();
     }
 
     @Override
@@ -20,7 +20,7 @@ public class MainPresenterImpl implements MainPresenter{
         if (mainView != null) {
             mainView.showProgress();
         }
-        //getQuoteInteractor.getNextQuote(this);
+        getQuoteInteractor.getNextQuote(this);
     }
 
     @Override
