@@ -11,9 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/3.1test/3.1test.iml" filepath="$PROJECT_DIR$/3.1test/3.1test.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.daggerretrofitokhttpgsonrxjavarxandroid/3.daggerretrofitokhttpgsonrxjavarxandroid.iml" filepath="$PROJECT_DIR$/3.daggerretrofitokhttpgsonrxjavarxandroid/3.daggerretrofitokhttpgsonrxjavarxandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/4.di/4.di.iml" filepath="$PROJECT_DIR$/4.di/4.di.iml" />
-      <module fileurl="file://$PROJECT_DIR$/5.mvpbase/5.mvpbase.iml" filepath="$PROJECT_DIR$/5.mvpbase/5.mvpbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/6.MvpInteractor/6.MvpInteractor.iml" filepath="$PROJECT_DIR$/6.MvpInteractor/6.MvpInteractor.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.recyclerandcardsview/7.recyclerandcardsview.iml" filepath="$PROJECT_DIR$/7.recyclerandcardsview/7.recyclerandcardsview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AsyncAndRx/AsyncAndRx.iml" filepath="$PROJECT_DIR$/AsyncAndRx/AsyncAndRx.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestMvpDaggerUt.iml" filepath="$PROJECT_DIR$/TestMvpDaggerUt.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

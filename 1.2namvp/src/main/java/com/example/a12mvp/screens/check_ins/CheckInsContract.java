@@ -3,6 +3,8 @@ package com.example.a12mvp.screens.check_ins;
 import com.example.a12mvp.Main.MainPresenter;
 import com.example.a12mvp.Main.MainView;
 
+import java.util.List;
+
 /**
  * Created by ADMIN on 9/29/2017.
  */
