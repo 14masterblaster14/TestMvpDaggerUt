@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Inject
     Vehicle vehicle;
-    private VehicleComponent vehicleComponent;
+    @Inject
+    VehicleComponent vehicleComponent;
+    //private VehicleComponent vehicleComponent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
         //Dager Code starts here...
 
-        vehicleComponent = DaggerVehicleComponent.builder().vehicleModule(new VehicleModule()).build();
+        //((MyApplication)getActivity().getApplication()).getVehicleComponent().inject(this);
+
 
         vehicle = vehicleComponent.provideVehicle();
 
         Toast.makeText(this, String.valueOf(vehicle.getSpeed()), Toast.LENGTH_SHORT).show();
+
+
     }
 
 

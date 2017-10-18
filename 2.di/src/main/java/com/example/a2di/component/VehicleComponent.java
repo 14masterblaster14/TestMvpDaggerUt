@@ -1,5 +1,6 @@
 package com.example.a2di.component;
 
+import com.example.a2di.MainActivity;
 import com.example.a2di.model.Vehicle;
 import com.example.a2di.module.VehicleModule;
 
@@ -16,6 +17,8 @@ import dagger.Component;
 public interface VehicleComponent {
 
     Vehicle provideVehicle();
+
+    void inject(MainActivity mainActivity);
 
 }
 
