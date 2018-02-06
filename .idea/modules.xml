@@ -7,13 +7,18 @@
       <module fileurl="file://$PROJECT_DIR$/1.mvp/1.mvp.iml" filepath="$PROJECT_DIR$/1.mvp/1.mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/2.1nadi/2.1nadi.iml" filepath="$PROJECT_DIR$/2.1nadi/2.1nadi.iml" />
       <module fileurl="file://$PROJECT_DIR$/2.2di/2.2di.iml" filepath="$PROJECT_DIR$/2.2di/2.2di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.3dibyadi/2.3dibyadi.iml" filepath="$PROJECT_DIR$/2.3dibyadi/2.3dibyadi.iml" />
       <module fileurl="file://$PROJECT_DIR$/2.di/2.di.iml" filepath="$PROJECT_DIR$/2.di/2.di.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.1test/3.1test.iml" filepath="$PROJECT_DIR$/3.1test/3.1test.iml" />
       <module fileurl="file://$PROJECT_DIR$/3.daggerretrofitokhttpgsonrxjavarxandroid/3.daggerretrofitokhttpgsonrxjavarxandroid.iml" filepath="$PROJECT_DIR$/3.daggerretrofitokhttpgsonrxjavarxandroid/3.daggerretrofitokhttpgsonrxjavarxandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/4.di/4.di.iml" filepath="$PROJECT_DIR$/4.di/4.di.iml" />
       <module fileurl="file://$PROJECT_DIR$/6.MvpInteractor/6.MvpInteractor.iml" filepath="$PROJECT_DIR$/6.MvpInteractor/6.MvpInteractor.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.recyclerandcardsview/7.recyclerandcardsview.iml" filepath="$PROJECT_DIR$/7.recyclerandcardsview/7.recyclerandcardsview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8.1navigationdrawer1/8.1navigationdrawer1.iml" filepath="$PROJECT_DIR$/8.1navigationdrawer1/8.1navigationdrawer1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8.navigationdrawer/8.navigationdrawer.iml" filepath="$PROJECT_DIR$/8.navigationdrawer/8.navigationdrawer.iml" />
+      <module fileurl="file://D:\download\MVPDemo-master\TestMvpDaggerUt\PDF reader\9.expandableview.iml" filepath="D:\download\MVPDemo-master\TestMvpDaggerUt\PDF reader\9.expandableview.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsyncAndRx/AsyncAndRx.iml" filepath="$PROJECT_DIR$/AsyncAndRx/AsyncAndRx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PDF reader/PDF reader.iml" filepath="$PROJECT_DIR$/PDF reader/PDF reader.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestMvpDaggerUt.iml" filepath="$PROJECT_DIR$/TestMvpDaggerUt.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_goneMarginTop="70dp"
+    tools:context="com.example.a9expandableview.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/openpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ask"
+        android:text="Open PDF" />
+
+    <Button
+        android:id="@+id/copy_internal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ask"
+        android:text="Copy Internal" />
+
+    <Button
+        android:id="@+id/copy_external"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ask"
+        android:text="Copy External" />
+</LinearLayout>

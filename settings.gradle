@@ -1,1 +1,1 @@
-include ':app', ':3.daggerretrofitokhttpgsonrxjavarxandroid', ':1.mvp', ':2.1nadi', ':2.di', ':1.1samplemvp', ':1.2namvp', ':2.2di', ':4.di', ':6.MvpInteractor', ':AsyncAndRx', ':3.1test', ':7.recyclerandcardsview'
+include ':app', ':3.daggerretrofitokhttpgsonrxjavarxandroid', ':1.mvp', ':2.1nadi', ':2.di', ':1.1samplemvp', ':1.2namvp', ':2.2di', ':4.di', ':6.MvpInteractor', ':AsyncAndRx', ':3.1test', ':7.recyclerandcardsview', ':2.3dibyadi', ':8.navigationdrawer', ':8.1navigationdrawer1', ':PDF reader'
